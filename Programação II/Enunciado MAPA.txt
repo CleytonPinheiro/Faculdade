@@ -1,0 +1,24 @@
+?- A calculadora deve possuir um campo de texto que funciona como a tela da calculadora.
+- Botões para os números de 0 a 9
+- Botões para as operações soma, subtração, multiplicação e divisão
+- Botão de resultado (=) 
+- Botão para limpar (CE).
+
+- Ao digitar os números, eles devem atualizar o número na tela.
+- Ao clicar na operação (soma, subtração, multiplicação, divisão) deve realizar alguma operação que tenha ficado pendente (se houver), armazenar o número da tela, armazenar a operação que será realizada e aguardar o próximo número a ser digitado.
+
+- O botão "=" deve executar a operação que tenha ficado pendente e exibir o resultado na tela.
+- O botão "CE" deve voltar a tela para "0" e limpar os operandos e a operação.
+- As operações precisam estar funcionando.
+
+Dicas:
+
+1. Pode ser mais fácil armazenar os operandos em variáveis e manipulá-los por ali, ao invés de manipular direto do textfield da tela.
+2. Use os números como "double". Apesar de não ter o botão para digitar números decimais, a divisão pode gerar um número decimal.
+3. Você pode usar o comando abaixo para formatar a saída de um Double na tela:
+
+DecimalFormat df = new DecimalFormat("#.########");
+String saida = df.format(variavelDouble);
+
+
+- A calculadora deve ser desenvolvido no NetBeans e a interface no GUI Builder contido no NetBeans.
